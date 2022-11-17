@@ -2,11 +2,13 @@
 
 ## Contact Information
 
-<p><strong>Email:</strong> morganhenry714@gmail.com<br>
+<p><strong>Email:</strong> 
+<morganhenry714@gmail.com> 
+<br>
 <strong>LinkedIn:</strong> https://www.linkedin.com/in/morganhenry23/<br>
 <strong>Phone:</strong> 831-594-0445</p>
 
-<morganhenry714@gmail.com>
+
 
 ## Education
 
