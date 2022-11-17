@@ -1,4 +1,4 @@
-# Skills
+
 
 ## Technical Skills
 ***
