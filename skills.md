@@ -1,9 +1,9 @@
 # Skills
 
 ## Technical Skills
-
-<p>Skilled and certified in Microsoft Excel, Word, PowerPoint, and Access<br>
-Proficient in Java, Python, SQL, Tableau, DAX, PowerBI, PowerPivot, and JMP</p>
+***
+### Skilled and certified in Microsoft Excel, Word, PowerPoint, and Access
+### Proficient in Java, Python, SQL, Tableau, DAX, PowerBI, PowerPivot, and JMP
 
 <p>I use Excel, Word, and PowerPoint almsot everyday as it pertains to school assignments. In Excel, I have experience creating charts, tables, pivot tables, pivot charts, predictive data models, time series models, regression models, simulation models, and hypothesis testing models.</p>
 
@@ -16,4 +16,6 @@ Proficient in Java, Python, SQL, Tableau, DAX, PowerBI, PowerPivot, and JMP</p>
 <p>Using JMP, I created many different types of predictive models from .csv files, including decision trees, clusters, neural networks, and regression models.</p>
 
 ## Soft Skills
-...
+***
+### Leadership
+### Customer Service
