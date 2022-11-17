@@ -1,4 +1,6 @@
-# Clubs and Groups
+# Interests
+
+## Clubs and Groups
 ...
-# Hobbies
+## Hobbies
 ...
