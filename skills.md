@@ -1,5 +1,5 @@
-## Skills
-# Technical Skills
+# Skills
+## Technical Skills
 ...
-# Soft Skills
+## Soft Skills
 ...
