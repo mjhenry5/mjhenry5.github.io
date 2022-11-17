@@ -1,5 +1,3 @@
-# Morgan Henry
-
 ## Contact Information
 
 <p><strong>Email:</strong>morganhenry714@gmail.com<br>
