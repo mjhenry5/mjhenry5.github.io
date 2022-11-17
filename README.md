@@ -2,18 +2,18 @@
 
 ## Contact Information
 
-Email: morganhenry714@gmail.com
-LinkedIn: https://www.linkedin.com/in/morganhenry23/
-Phone: 831-594-0445
+<p><strong>Email:</strong> morganhenry714@gmail.com<br>
+<strong>LinkedIn:</strong> https://www.linkedin.com/in/morganhenry23/<br>
+<strong>Phone:</strong> 831-594-0445</p>
 
 ## Education
 
-University of Denver, Daniels College of Business
-Bachelor of Science Business Administration
-Major: Business Information and Analytics
-Minor: Entrepreneurship
-Overall GPA: 3.94
-Major GPA: 4.00
+<p><em>University of Denver</em><br>
+<strong>Degree:</strong> Bachelor of Science Business Administration<br>
+<strong>Major:</strong> Business Information and Analytics<br>
+<strong>Minor:</strong> Entrepreneurship<br>
+<strong>Overall GPA:</strong> 3.94<br>
+<strong>Major GPA:</strong> 4.00</p>
 
-Masconomet Regional High School
-Acheivement: High School Diploma
+<p><em>Masconomet Regional High School</em><br>
+<strong>Acheivement:</strong> High School Diploma</p>
