@@ -1,6 +1,6 @@
 # Example Work
 
-<img src="img/DataMining.PNG" alt="DataMining" class="inline"/>
+<img src="/img/DataMining.PNG" alt="DataMining" class="inline"/>
 
 ## [Data Mining](https://github.com/mjhenry5/mjhenry5.github.io/tree/main/Final)
 ___
@@ -12,3 +12,4 @@ ___
 
 
 ## [Simulation](https://github.com/mjhenry5/mjhenry5.github.io/blob/main/Info%202020%20project%203.xlsx)
+___
