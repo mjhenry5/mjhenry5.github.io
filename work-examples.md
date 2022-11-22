@@ -1,6 +1,6 @@
 # Example Work
 
-<img src="/img/DataMining.PNG"/>
+<img src="img/DataMining.PNG" alt="DataMining" class="inline"/>
 
 ## [Data Mining](https://github.com/mjhenry5/mjhenry5.github.io/tree/main/Final)
 ___
