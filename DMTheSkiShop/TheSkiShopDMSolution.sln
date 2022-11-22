@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DMSolutionDocumentation", "DMSolutionDocumentation", "{9670F743-952E-4F09-91DB-0631C04595F5}"
+	ProjectSection(SolutionItems) = preProject
+		DMSolutionDocumentation\DMTheSkiShopBISolutionPlan.docx = DMSolutionDocumentation\DMTheSkiShopBISolutionPlan.docx
+		DMSolutionDocumentation\DMTheSkiShopBISolutionWorksheets.xlsx = DMSolutionDocumentation\DMTheSkiShopBISolutionWorksheets.xlsx
+		DMSolutionDocumentation\DMTheSkiShopStarSchema.vsdx = DMSolutionDocumentation\DMTheSkiShopStarSchema.vsdx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DMBuild", "DMBuild", "{D486D51A-4F33-4A62-A223-2363A8959DD6}"
+	ProjectSection(SolutionItems) = preProject
+		DMBuild\BuildTheSkiShopDM.sql = DMBuild\BuildTheSkiShopDM.sql
+	EndProjectSection
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "TheSkiShopDM ETL", "TheSkiShopDM ETL\TheSkiShopDM ETL.dtproj", "{2ECCC8C9-FC67-43B9-896C-60DA92067CB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DMMultidimensionalAnalysis", "DMMultidimensionalAnalysis", "{EE20FEB5-36AC-44AA-B5A0-76E164E52EE0}"
+	ProjectSection(SolutionItems) = preProject
+		DMMultidimensionalAnalysis\DMMultidimensionalAnalysis.xlsx = DMMultidimensionalAnalysis\DMMultidimensionalAnalysis.xlsx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ECCC8C9-FC67-43B9-896C-60DA92067CB9}.Development|Default.ActiveCfg = Development
+		{2ECCC8C9-FC67-43B9-896C-60DA92067CB9}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A17FB96-E15E-4145-B1FD-983EC309371A}
+	EndGlobalSection
+EndGlobal

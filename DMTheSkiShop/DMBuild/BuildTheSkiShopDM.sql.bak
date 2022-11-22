@@ -1,0 +1,110 @@
+-- Build TheSkiShop DM --
+-- INFO 3300 Phase 2 --
+-- Created by Morgan Henry--
+-- Created on 10/11/2022 -- 
+
+IF NOT EXISTS(SELECT * FROM sys.databases
+WHERE NAME = N'TheSkiShopDM')
+CREATE DATABASE TheSkiShopDM
+GO
+--
+USE TheSkiShopDM
+GO
+--
+
+--
+--Drop Existing Tables
+--
+IF EXISTS(
+	SELECT *
+	FROM sys.tables
+	WHERE NAME = N'FactSales'
+	)
+	DROP TABLE FactSales;
+--
+IF EXISTS(
+	SELECT *
+	FROM sys.tables
+	WHERE NAME = N'DimEmployee'
+	)
+	DROP TABLE DimEmployee;
+--
+IF EXISTS(
+	SELECT *
+	FROM sys.tables
+	WHERE NAME = N'DimCustomerDemographic'
+	)
+	DROP TABLE DimCustomerDemographic;
+--
+IF EXISTS(
+	SELECT *
+	FROM sys.tables
+	WHERE NAME = N'DimProduct'
+	)
+	DROP TABLE DimProduct;
+-- 
+IF EXISTS(
+	SELECT *
+	FROM sys.tables
+	WHERE NAME = N'DimDate'
+	)
+	DROP TABLE DimDate;
+
+--Begin creating tables with the fact table being created last
+-- 
+CREATE TABLE DimDate 
+	(Date_SK			INT CONSTRAINT pk_date_sk PRIMARY KEY, 
+	Date				DATETIME,
+	DateName			NVARCHAR(50),
+	MONTH				INT,
+	MonthName			NVARCHAR(50),
+	Quarter				INT,
+	QuarterName			NVARCHAR(50),
+	Year 				INT,
+	YearName			NVARCHAR(50)
+	);
+--
+CREATE TABLE DimProduct
+	(Product_SK			INT IDENTITY(1,1) NOT NULL CONSTRAINT pk_product_sk PRIMARY KEY,
+	Product_AK 			INT NOT NULL,
+	ProductName			NVARCHAR(200) NOT NULL,
+	ProductDescription	NVARCHAR(200) NOT NULL,
+	BrandName			NVARCHAR(30) NOT NULL,
+	Category			NVARCHAR(20) NOT NULL,
+	Price				DECIMAL(18,4) NOT NULL
+	);
+--
+CREATE TABLE DimCustomerDemographic
+	(Customer_SK		INT IDENTITY(1,1) NOT NULL CONSTRAINT pk_customer_sk PRIMARY KEY,
+	Customer_AK 		INT NOT NULL,
+	CustomerLevel		NVARCHAR(30) NOT NULL,
+	BirthDate			DATETIME NOT NULL,
+	Gender				NVARCHAR(2) NOT NULL,
+	Income				DECIMAL(18,4) NOT NULL,
+	MaritalStatus		NVARCHAR(2) NOT NULL,
+	HouseholdSize		INT NOT NULL
+	);
+--
+CREATE TABLE DimEmployee
+	(Employee_SK		INT IDENTITY(1,1) NOT NULL CONSTRAINT pk_employee_sk PRIMARY KEY,
+	Employee_AK			INT NOT NULL,
+	EmployeeType		NVARCHAR(25) NOT NULL,
+	FirstName			NVARCHAR(15) NOT NULL,
+	LastName			NVARCHAR(30) NOT NULL
+	);
+--
+CREATE TABLE FactSales
+	(Purchase_DD	    INT NOT NULL,
+	Product_SK			INT NOT NULL,
+	Customer_SK 		INT NOT NULL,
+	Employee_SK			INT NOT NULL,
+	PurchaseDateKey		INT NOT NULL,
+	PurchaseCost		INT NOT NULL,
+	PurchaseQuantity	INT NOT NULL,
+	CommissionRate		INT NOT NULL,
+	CONSTRAINT pk_fact_sales PRIMARY KEY (Purchase_DD, Product_SK, Customer_SK, Employee_SK, PurchaseDateKey),
+	CONSTRAINT fk_dim_Product FOREIGN KEY (Product_SK) REFERENCES DimProduct(Product_SK),
+	CONSTRAINT fk_dim_CustomerDemographic FOREIGN KEY (Customer_SK) REFERENCES DimCustomerDemographic(Customer_SK),
+	CONSTRAINT fk_dim_Employee FOREIGN KEY (Employee_SK) REFERENCES DimEmployee(Employee_SK),
+	CONSTRAINT fk_dim_Date FOREIGN KEY (PurchaseDateKey) REFERENCES DimDate(Date_SK)
+	);
