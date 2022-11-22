@@ -1,4 +1,7 @@
-# About Me
+# About Me        
+
+<img src="/docs/assets/Profile.jpg" width="300" height="400" />
+
 ## Contact Information
 
 <p><strong>Email:</strong>morganhenry714@gmail.com<br>
